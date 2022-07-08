@@ -320,7 +320,7 @@ XeonBotInc.sendMessage(m.chat, { text :teks, }, {quoted: m, thumbnail: fs.readFi
 }
 
 //FAKE CONTACT
-const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `916909137213 -1614953337@g.us` } : {}) }, message: { 'contactMessage': { 'displayName': `${pushname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Click to chat\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb,sendEphemeral: true}}}
+const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: `919895823783-1614953337@g.us` } : {}) }, message: { 'contactMessage': { 'displayName': `${pushname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Click to chat\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb,sendEphemeral: true}}}
 //FAKEREPLY PRODUCT
 const ftoko = {
 key: {
@@ -3244,7 +3244,7 @@ id: 'menu'
 }  
 }, {
 quickReplyButton: {
-displayText: 'Owner 😈',
+displayText: 'Owner 🦜',
 id: 'owner'
 }
 }]
@@ -3285,7 +3285,7 @@ id: 'menu'
 }  
 }, {
 quickReplyButton: {
-displayText: 'Owner 😈',
+displayText: 'Owner 🦜',
 id: 'owner'
 }
 }]
@@ -3327,7 +3327,7 @@ id: 'menu'
 }  
 }, {
 quickReplyButton: {
-displayText: 'Owner 😈',
+displayText: 'Owner 🦜',
 id: 'owner'
 }
 }]
@@ -3392,7 +3392,7 @@ if (!wokwol.quoted) return replay('The message you replied to does not contain a
 await wokwol.quoted.copyNForward(m.chat, true)
 }
 break
-case 'listpc': {
+case '...': {
    if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 let anu = await store.chats.all().filter(v => v.id.endsWith('.net')).map(v => v)
